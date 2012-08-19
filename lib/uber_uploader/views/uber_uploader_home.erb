@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Uber Uploader</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script>
+  <script src="uber_upload.js"></script>
+
+</head>
+<body>
+  <h2>Uber Uploader</h2>
+
+  <form id="file-uploader" action="" method="POST" enctype="multipart/form-data">
+    <input type="file" id="file", name="file">
+  </form>
+
+  <br/><br/>
+
+  <div>Status <span id="percentage">0</span>%. <span id="file-link"></span></div>
+
+  <br/><br/>
+
+  <form id="description-uploader" action="" method="POST">
+    <textarea cols="40" rows="3" name="description"></textarea>
+    <input type="submit" value="Save" disabled="disabled">
+  </form>
+</body>
+</html>
